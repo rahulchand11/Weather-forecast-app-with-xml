@@ -48,9 +48,7 @@ const apicall = function(city){
            image.src = "/assest/snow.png";
             break;
 
-    }
-               image.replaceWith(dynamicIcon);
-            console.log(data.weather[0].icon);    
+    }  
             } else {
                 console.log("Bad Request");
             }
