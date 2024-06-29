@@ -30,10 +30,8 @@ const apicall = function(city){
             windspeed.innerHTML = `${data.wind.speed}Km/h<br>Wind-Speed`;
             humidpercentage.innerHTML = `${data.main.humidity}%<br>Humidity`;
             temp.innerHTML = `${celsiustemp}&deg;C`;
-             dynamicIcon.setAttribute("src", `https:/openweathermap.org/img/wn/${data.weather[0].icon}.png`);
-             console.log(data.weather[0].icon);
-              dynamicIcon.setAttribute("id", "images");
-                 switch(data.weather[0].main){
+             
+        switch(data.weather[0].main){
         case 'Clouds':
             image.src = "/asset/cloud.png";
             break;
