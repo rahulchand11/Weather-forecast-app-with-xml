@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather APP using XML</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"/>
+
+</head>
+<body>
+    <div class="container">
+        <div class="input-wrapper">
+            <input type="text" class="cityvalue" Placeholder = "Enter the City Name">
+            <span class="search"><i class="fa-solid fa-magnifying-glass"></i></span>
+            <div class="image-wrapper">
+                <h3 class="city-name">City Name</h3>
+                <img src="./Images/cloud.png" alt="image" id="images">
+            </div>
+            <h1 class="temperature">28&deg;C</h1>
+            <p class="temp-humidity">Haze</p>   
+            <div class="footer-vals">
+                <div class="left-div">
+                    <i class="fa-solid fa-droplet"></i>
+                <span class="humid-percentage">78%<br>Humidity</span>
+                </div>
+                <div class="right-div">
+                    <i class="fa-solid fa-wind"></i>
+                    <span class="wind-speed">2.09Km/h<br>Wind-Speed</span>
+                  
+                </div>
+            </div>
+        </div>
+        
+    </div>
+</body>
+<script src="script.js"></script>
+</html>
