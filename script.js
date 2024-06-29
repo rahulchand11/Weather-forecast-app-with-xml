@@ -35,19 +35,19 @@ const apicall = function(city){
               dynamicIcon.setAttribute("id", "images");
                  switch(data.weather[0].main){
         case 'Clouds':
-            weather_img.src = "/assets/cloud.png";
+            image.src = "/assets/cloud.png";
             break;
         case 'Clear':
-            weather_img.src = "/assets/clear.png";
+            image.src = "/assets/clear.png";
             break;
         case 'Rain':
-            weather_img.src = "/assets/rain.png";
+            image.src = "/assets/rain.png";
             break;
         case 'Mist':
-            weather_img.src = "/assets/mist.png";
+            image.src = "/assets/mist.png";
             break;
         case 'Snow':
-            weather_img.src = "/assets/snow.png";
+           image.src = "/assets/snow.png";
             break;
 
     }
