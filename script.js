@@ -31,7 +31,7 @@ const apicall = function(city){
             humidpercentage.innerHTML = `${data.main.humidity}%<br>Humidity`;
             temp.innerHTML = `${celsiustemp}&deg;C`;
              
-        switch(data.weather[0].description){
+        switch(data.weather[0].main){
         case 'Clouds':
             image.setAttribute("src", "/assest/cloud.png")
             // image.src = "/assest/cloud.png";
