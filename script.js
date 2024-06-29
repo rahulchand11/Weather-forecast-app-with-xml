@@ -31,31 +31,33 @@ const apicall = function(city){
             humidpercentage.innerHTML = `${data.main.humidity}%<br>Humidity`;
             temp.innerHTML = `${celsiustemp}&deg;C`;
              
-    //     switch(data.weather[0].main){
-    //     case 'Clouds':
-    //         image.src = "/assest/cloud.png";
-    //         break;
-    //     case 'Clear':
-    //         image.src = "/assest/clear.png";
-    //         break;
-    //     case 'Rain':
-    //         image.src = "/assest/rain.png";
-    //         break;
-    //     case 'Mist':
-    //         image.src = "/assest/mist.png";
-    //         break;
-    //     case 'Snow':
-    //        image.src = "/assest/snow.png";
-    //         break;
-
-    // }  
-                if (data.weather[0].description === "clear sky") {
-                image.setAttribute("src", "./assest/clear.png")
-             }else if(data.weather[0].description === "Mist"){
-                image.setAttribute("src", "./assest/mist.png")
-             } else if(data.weather[0].description === "broken clouds"){
-                image.setAttribute("src", "./assest/clouds.png")
-             }
+        switch(data.weather[0].main){
+        case 'Clouds':
+            image.setAttribute("src", "/assest/cloud.png")
+            image.src = "/assest/cloud.png";
+            break;
+        case 'Clear':
+            image.setAttribute("src", "/assest/clear.png")    
+            image.src = "/assest/clear.png";
+            break;
+        case 'Rain':
+            image.setAttribute("src", "/assest/rain.png")    
+            break;
+        case 'Mist':
+            image.setAttribute("src", "/assest/mist.png")    
+            break;
+        case 'Snow':
+           image.setAttribute("src", "/assest/snow.png")     
+           image.src = "/assest/snow.png";
+            break;
+    }  
+             //    if (data.weather[0].description === "clear sky") {
+             //    image.setAttribute("src", "./assest/clear.png")
+             // }else if(data.weather[0].description === "Mist"){
+             //    image.setAttribute("src", "./assest/mist.png")
+             // } else if(data.weather[0].description === "broken clouds"){
+             //    image.setAttribute("src", "./assest/clouds.png")
+             // }
             } else {
                 console.log("Bad Request");
             }
