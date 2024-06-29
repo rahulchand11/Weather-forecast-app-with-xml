@@ -34,7 +34,6 @@ const apicall = function(city){
         switch(data.weather[0].main){
         case 'Clouds':
             image.setAttribute("src", "./assest/cloud.png")
-            
             break;
         case 'Clear':
             image.setAttribute("src", "./assest/clear.png")    
@@ -48,7 +47,6 @@ const apicall = function(city){
             break;
         case 'Snow':
            image.setAttribute("src", "./assest/snow.png")     
-           
             break;
     }  
             } else {
