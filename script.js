@@ -33,19 +33,19 @@ const apicall = function(city){
              
         switch(data.weather[0].main){
         case 'Clouds':
-            image.src = "/asset/cloud.png";
+            image.src = "/assest/cloud.png";
             break;
         case 'Clear':
-            image.src = "/asset/clear.png";
+            image.src = "/assest/clear.png";
             break;
         case 'Rain':
-            image.src = "/asset/rain.png";
+            image.src = "/assest/rain.png";
             break;
         case 'Mist':
-            image.src = "/asset/mist.png";
+            image.src = "/assest/mist.png";
             break;
         case 'Snow':
-           image.src = "/asset/snow.png";
+           image.src = "/assest/snow.png";
             break;
 
     }
