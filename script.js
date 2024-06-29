@@ -33,6 +33,24 @@ const apicall = function(city){
              dynamicIcon.setAttribute("src", `https:/openweathermap.org/img/wn/${data.weather[0].icon}.png`);
              console.log(data.weather[0].icon);
               dynamicIcon.setAttribute("id", "images");
+                 switch(data.weather[0].main){
+        case 'Clouds':
+            weather_img.src = "/assets/cloud.png";
+            break;
+        case 'Clear':
+            weather_img.src = "/assets/clear.png";
+            break;
+        case 'Rain':
+            weather_img.src = "/assets/rain.png";
+            break;
+        case 'Mist':
+            weather_img.src = "/assets/mist.png";
+            break;
+        case 'Snow':
+            weather_img.src = "/assets/snow.png";
+            break;
+
+    }
                image.replaceWith(dynamicIcon);
             console.log(data.weather[0].icon);    
             } else {
