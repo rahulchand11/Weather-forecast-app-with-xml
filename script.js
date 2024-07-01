@@ -37,7 +37,6 @@ const apicall = function(city){
             break;
         case 'Clear':
             image.setAttribute("src", "./assest/clear.png")    
-            
             break;
         case 'Rain':
             image.setAttribute("src", "./assest/rain.png")    
@@ -48,6 +47,9 @@ const apicall = function(city){
         case 'Snow':
            image.setAttribute("src", "./assest/snow.png")     
             break;
+        case 'Haze':
+          image.setAttribute("src", "./Images/haze.png")     
+           break;        
     }  
             } else {
                 console.log("Bad Request");
