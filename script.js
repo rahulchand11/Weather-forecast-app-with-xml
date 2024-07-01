@@ -48,7 +48,7 @@ const apicall = function(city){
            image.setAttribute("src", "./assest/snow.png")     
             break;
         case 'Haze':
-          image.setAttribute("src", "./Images/haze.png")     
+          image.setAttribute("src", "./assest/haze.png")     
            break;        
     }  
             } else {
